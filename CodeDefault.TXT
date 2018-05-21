@@ -1,0 +1,22 @@
+MAIN:      MOV 5 A
+           PUSH A
+           ALWAYS
+           CALL FACT
+           POP A
+           HALT
+FACT:      MOV +1 A
+           NZERO
+           JMP RECUR
+           MOV 1 A
+           MOV A +1
+           RTN
+RECUR:     PUSH A
+           DEC
+           PUSH A
+           ALWAYS
+           CALL FACT
+           POP B
+           POP A
+           MUL
+           MOV A +1
+           RTN +0
