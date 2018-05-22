@@ -7,7 +7,7 @@
 - load CodeTailRecursion.txt
 
 
-### Functional Programming 
+## Functional Programming 
 Normally when a function is called it saves the information on the call stack, that is a list of return locations in order.
 
 #### Tail Recursion
